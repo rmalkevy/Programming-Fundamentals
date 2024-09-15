@@ -1,0 +1,11 @@
+*.dSYM
+*.out
+*.exe
+*.class
+*.jar
+*.dll
+*.dylib
+*.so
+*.dylib
+main
+
