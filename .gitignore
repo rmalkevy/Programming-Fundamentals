@@ -8,4 +8,5 @@
 *.so
 *.dylib
 main
+.vscode
 
