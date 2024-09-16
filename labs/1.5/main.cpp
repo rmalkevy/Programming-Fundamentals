@@ -23,12 +23,7 @@ int main() {
         cout << "res: " << boolalpha << res << endl;
     }
 
-    {
-        int a = 0;
-
-        bool res = !a;
-        cout << "res: " << boolalpha << res << endl;
-    }
+    // deleted few lines of code
 
     return 0;
 }
