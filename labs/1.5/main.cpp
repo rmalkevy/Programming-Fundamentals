@@ -23,7 +23,17 @@ int main() {
         cout << "res: " << boolalpha << res << endl;
     }
 
-    // deleted few lines of code
+    {
+        int a = 10;
+        int b = 20;
+        int c = 30;
+        int d = 40;
+
+        // <УЛО1> (<УЛО2> (A<ОВ1>B) <БЛО> (<УЛО3> (C<ОВ2>D)))
+        //  empty (  !    (a == b)    ^   (   !   (c != d)))
+        bool res = (!(a == b) ^ (!(c != d)));
+        cout << "res: " << boolalpha << res << endl;
+    }
 
     return 0;
 }
