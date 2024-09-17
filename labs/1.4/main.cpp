@@ -92,5 +92,16 @@ int main() {
         ptrToPtr = nullptr;
     }
 
+    // Comment to local scope 6
+    {
+        cout << "Variable vs. Reference" << endl;
+        int nCount = 10;
+        int &ref = nCount;
+        int* ptr = &ref;
+
+        cout << "ref = "  << ref << endl;  // Outputs: 20
+        cout << "*ptr = " << *ptr << endl;  // Outputs: 20
+    }
+
     return 0;
 }
