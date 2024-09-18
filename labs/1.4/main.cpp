@@ -99,14 +99,17 @@ int main() {
         int &ref = nCount;
         int* ptr = &ref;
 
+        cout << "nCount = "  << nCount << endl;  // Outputs: 10
         cout << "ref = "  << ref << endl;  // Outputs: 10
         cout << "*ptr = " << *ptr << endl;  // Outputs: 10
 
         ref++;
+        cout << "nCount = "  << nCount << endl;  // Outputs: 10
         cout << "ref = "  << ref << endl;  // Outputs: 11
         cout << "*ptr = " << *ptr << endl;  // Outputs: 11
 
         *ptr = 20;
+        cout << "nCount = "  << nCount << endl;  // Outputs: 10
         cout << "ref = "  << ref << endl;  // Outputs: 20
         cout << "*ptr = " << *ptr << endl;  // Outputs: 20
     }

@@ -30,8 +30,8 @@ int main() {
         int d = 40;
 
         // <УЛО1> (<УЛО2> (A<ОВ1>B) <БЛО> (<УЛО3> (C<ОВ2>D)))
-        //  empty (  !    (a == b)    ^   (   !   (c != d)))
-        bool res = (!(a == b) ^ (!(c != d)));
+        //  empty (  !    (a == b)    and   (   !   (c != d)))
+        bool res = (!(a == b) and (!(c != d)));
         cout << "res: " << boolalpha << res << endl;
     }
 
