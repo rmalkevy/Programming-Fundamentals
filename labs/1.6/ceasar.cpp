@@ -24,6 +24,13 @@ std::string caesarEncrypt(const std::string& text, int shift) {
 }
 
 int main() {
+    // Just test what happens if we add shift to the 'A' and 'a'
+    int shift_test = 1;
+    std::cout << "Shifted 'A' without cast: " << 'A' + shift_test << std::endl;
+    std::cout << "Shifted 'A' with cast   : " << char('A' + shift_test) << std::endl;
+    std::cout << "Shifted 'a' with cast   : " << char('a' + shift_test) << std::endl;
+
+    // Get the text and shift from the user
     std::string text;
     int shift;
 
