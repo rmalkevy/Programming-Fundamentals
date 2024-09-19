@@ -104,7 +104,7 @@ int main() {
         cout << "*ptr = " << *ptr << endl;  // Outputs: 10
 
         ref++;
-        cout << "nCount = "  << nCount << endl;  // Outputs: 10
+        cout << "nCount = "  << nCount << endl;  // Outputs: 11
         cout << "ref = "  << ref << endl;  // Outputs: 11
         cout << "*ptr = " << *ptr << endl;  // Outputs: 11
 
