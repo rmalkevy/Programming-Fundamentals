@@ -28,7 +28,7 @@ int main() {
         int* arr = new int[n];
         // Populate the array with random values
         for (int i = 0; i < n; i++) {
-            arr[i] = rand() % 100;
+            arr[i] = (rand() % 100) - 50;
         }
 
         // cout the array
