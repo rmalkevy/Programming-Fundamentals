@@ -3,32 +3,23 @@
 
 using namespace std;
 
-// bool areEqual(int a, int b) {
-//   int bitSize = sizeof(int) * 8;
+bool areEqual(int a, int b) {
+  int bitSize = sizeof(int) * 8;
 
-//   for (int i = 0; i < bitSize; i++) {
-//     int mask = 1 << i;
-//     // 1 mask = 00000001 & 10010011 = 00000001
-//     // 2 mask = 00000010 & 10010011 = 00000010
-//     // 4 mask = 00000100
-//     // 8 mask = 00001000
-//     // 16 mask = 00010000
-//     // 32 mask = 00100000
-//     // 64 mask = 01000000
-//     // 128 mask = 10000000
+  for (int i = 0; i < bitSize; i++) {
+    int mask = 1 << i;
+    // 1 mask = 00000001 & 10010011 = 00000001
+    //          10010011
 
-//     // 5 in binary is 00000101
-//     //                00000001
+    int a_bit = a & mask;
+    int b_bit = b & mask;
 
-//     int a_bit = a & mask;
-//     int b_bit = b & mask;
-
-//     if (a_bit != b_bit) {
-//       return false;
-//     }
-//   }
-//   return true;
-// }
+    if (a_bit != b_bit) {
+      return false;
+    }
+  }
+  return true;
+}
 
 // bool isMultipleOf8(int a) {
 //   // 7 in binary is 00000111, so if a & 7 == 0, then a is a multiple of 8
@@ -43,28 +34,28 @@ using namespace std;
 //   return (a & mask_binary) == 0;
 // }
 
-void printVector(const std::vector<int>& vec) {
-  for (int i = 0; i < vec.size(); i++) {
-    std::cout << vec[i] << " ";
-  }
-  std::cout << std::endl;
-}
+// void printVector(const std::vector<int>& vec) {
+//   for (int i = 0; i < vec.size(); i++) {
+//     std::cout << vec[i] << " ";
+//   }
+//   std::cout << std::endl;
+// }
 
 int main() {
-  // {
-  //   // Задано два цілих значення А та В. Визначити, чи вони
-  //   // дорівнюють, використовуючи бітове подання чисел.
+  {
+    // Задано два цілих значення А та В. Визначити, чи вони
+    // дорівнюють, використовуючи бітове подання чисел.
 
-  //   int a, b;
-  //   std::cout << "Enter two integers: ";
-  //   std::cin >> a >> b;
+    int a, b;
+    std::cout << "Enter two integers: ";
+    std::cin >> a >> b;
 
-  //   if (areEqual(a, b)) {
-  //     std::cout << "The numbers are equal." << std::endl;
-  //   } else {
-  //     std::cout << "The numbers are not equal." << std::endl;
-  //   }
-  // }
+    if (areEqual(a, b)) {
+      std::cout << "The numbers are equal." << std::endl;
+    } else {
+      std::cout << "The numbers are not equal." << std::endl;
+    }
+  }
 
   // {
   //   // Задано ціле значення А. Визначити, чи є значення А
@@ -81,61 +72,66 @@ int main() {
   //   }
   // }
 
-  {
-    // Завдання:
-    // Задано дві послідовності, які складаються з 0 та 1.
-    // Скласти специфікацію для моделювання операцій AND, OR, XOR.
+  // {
+  //   // Завдання:
+  //   // Задано дві послідовності, які складаються з 0 та 1.
+  //   // Скласти специфікацію для моделювання операцій AND, OR, XOR.
 
-    // Специфікація:
+  //   // Специфікація:
   
-    // Вхідні дані:
-    // - Дві послідовності бітів (A, B) однакової довжини.
+  //   // Вхідні дані:
+  //   // - Дві послідовності бітів (A, B) однакової довжини.
 
-    // Алгоритм:
-    // 1. Пройти по кожному елементу послідовностей A і B.
-    // 2. Для кожного елемента обчислити результат операції AND, OR, або XOR.
-    // 3. Зберегти результат в нову послідовність.
+  //   // Алгоритм:
+  //   // 1. Пройти по кожному елементу послідовностей A і B.
+  //   // 2. Для кожного елемента обчислити результат операції AND, OR, або XOR.
+  //   // 3. Зберегти результат в нову послідовність.
 
-    // Операції:
-    // - AND: ri = ai AND bi
-    // - OR: ri = ai OR bi
-    // - XOR: ri = ai XOR bi
+  //   // Операції:
+  //   // - AND: ri = ai AND bi
+  //   // - OR: ri = ai OR bi
+  //   // - XOR: ri = ai XOR bi
 
-    // Вихідні дані:
-    // - Результуюча послідовність R.
+  //   // Вихідні дані:
+  //   // - Результуюча послідовність R.
 
-    int n = 10;
+  //   int n = 10;
 
+<<<<<<< Updated upstream
     std::vector<int> a(n); // [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
     std::vector<int> b(n); // [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+=======
+  //   std::vector<int> a(n); // [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  //   std::vector<int> b(n);
+>>>>>>> Stashed changes
 
-    for (int i = 0; i < n; i++) {
-      a[i] = rand() % 2;
-      b[i] = rand() % 2;
-    }
+  //   for (int i = 0; i < n; i++) {
+  //     a[i] = rand() % 2;
+  //     b[i] = rand() % 2;
+  //   }
 
-    std::cout << "A  : ";
-    printVector(a);
-    std::cout << "B  : ";
-    printVector(b);
+  //   std::cout << "A  : ";
+  //   printVector(a);
+  //   std::cout << "B  : ";
+  //   printVector(b);
 
-    std::vector<int> r_and(n);
-    std::vector<int> r_or(n);
-    std::vector<int> r_xor(n);
+  //   std::vector<int> r_and(n);
+  //   std::vector<int> r_or(n);
+  //   std::vector<int> r_xor(n);
 
-    for (int i = 0; i < n; i++) {
-      r_and[i] = a[i] & b[i];
-      r_or[i] = a[i] | b[i];
-      r_xor[i] = a[i] ^ b[i];
-    }
+  //   for (int i = 0; i < n; i++) {
+  //     r_and[i] = a[i] & b[i];
+  //     r_or[i] = a[i] | b[i];
+  //     r_xor[i] = a[i] ^ b[i];
+  //   }
 
-    std::cout << "AND: ";
-    printVector(r_and);
-    std::cout << "OR : ";
-    printVector(r_or);
-    std::cout << "XOR: ";
-    printVector(r_xor);
-  }
+  //   std::cout << "AND: ";
+  //   printVector(r_and);
+  //   std::cout << "OR : ";
+  //   printVector(r_or);
+  //   std::cout << "XOR: ";
+  //   printVector(r_xor);
+  // }
 
   return 0;
 }
