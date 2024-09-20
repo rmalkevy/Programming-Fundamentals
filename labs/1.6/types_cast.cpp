@@ -5,7 +5,7 @@ void printValue(void* ptr, char type) {
     // Using a switch statement to determine the type and cast accordingly
     switch (type) {
         case 'i': // integer type
-            int* intPtr = (int*)ptr;
+            int* intPtr = (int*)ptr; // Cast the void pointer to an int pointer
             std::cout << "Integer value: " << *intPtr << std::endl;
             break;
         case 'f': // float type
@@ -28,7 +28,6 @@ int main() {
 
     // Using void pointers to point to these variables
     void* voidPtr;
-    int* intPtr = &intValue;
 
     // Assign void pointer to the address of intValue
     voidPtr = &intValue;

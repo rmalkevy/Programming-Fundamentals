@@ -8,11 +8,11 @@ std::string caesarEncrypt(const std::string& text, int shift) {
     for (char c : text) {
         // Check if the character is uppercase
         if (isupper(c)) {
-            result += char(int(c + shift - 65) % 26 + 65);
+            result += char((c + shift - 65) % 26 + 65);
         }
         // Check if the character is lowercase
         else if (islower(c)) {
-            result += char(int(c + shift - 97) % 26 + 97);
+            result += char((c + shift - 97) % 26 + 97);
         }
         // If it's neither, just add the character as is
         else {
@@ -26,6 +26,7 @@ std::string caesarEncrypt(const std::string& text, int shift) {
 int main() {
     // Just test what happens if we add shift to the 'A' and 'a'
     int shift_test = 1;
+    std::cout << "Shifted 'A' without cast: " << 'A' + char(shift_test) << std::endl;
     std::cout << "Shifted 'A' without cast: " << 'A' + shift_test << std::endl;
     std::cout << "Shifted 'A' with cast   : " << char('A' + shift_test) << std::endl;
     std::cout << "Shifted 'a' with cast   : " << char('a' + shift_test) << std::endl;
