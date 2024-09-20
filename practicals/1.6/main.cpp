@@ -3,29 +3,45 @@
 
 using namespace std;
 
-bool areEqual(int a, int b) {
-  int bitSize = sizeof(int) * 8;
+// bool areEqual(int a, int b) {
+//   int bitSize = sizeof(int) * 8;
 
-  for (int i = 0; i < bitSize; i++) {
-    if ((a & (1 << i)) != (b & (1 << i))) {
-      return false;
-    }
-  }
-  return true;
-}
+//   for (int i = 0; i < bitSize; i++) {
+//     int mask = 1 << i;
+//     // 1 mask = 00000001 & 10010011 = 00000001
+//     // 2 mask = 00000010 & 10010011 = 00000010
+//     // 4 mask = 00000100
+//     // 8 mask = 00001000
+//     // 16 mask = 00010000
+//     // 32 mask = 00100000
+//     // 64 mask = 01000000
+//     // 128 mask = 10000000
 
-bool isMultipleOf8(int a) {
-  // 7 in binary is 00000111, so if a & 7 == 0, then a is a multiple of 8
-  // because 8 in binary is 00001000
-  // and 00001000 & 00000111 == 00000000
-  // so if a & 7 == 0, then a is a multiple of 8
-  // 00011000 -> 24
-  // 00111000 -> 56
-  // 01111000 -> 120
-  // 11111000 -> 248
-  int mask_binary = 0b00000111; // 7 in binary
-  return (a & mask_binary) == 0;
-}
+//     // 5 in binary is 00000101
+//     //                00000001
+
+//     int a_bit = a & mask;
+//     int b_bit = b & mask;
+
+//     if (a_bit != b_bit) {
+//       return false;
+//     }
+//   }
+//   return true;
+// }
+
+// bool isMultipleOf8(int a) {
+//   // 7 in binary is 00000111, so if a & 7 == 0, then a is a multiple of 8
+//   // because 8 in binary is 00001000
+//   // and 00001000 & 00000111 == 00000000
+//   // so if a & 7 == 0, then a is a multiple of 8
+//   // 00011000 -> 24
+//   // 00111000 -> 56
+//   // 01111000 -> 120
+//   // 11111000 -> 248
+//   int mask_binary = 0b00000111; // 7 in binary
+//   return (a & mask_binary) == 0;
+// }
 
 void printVector(const std::vector<int>& vec) {
   for (int i = 0; i < vec.size(); i++) {
@@ -35,35 +51,35 @@ void printVector(const std::vector<int>& vec) {
 }
 
 int main() {
-  {
-    // Задано два цілих значення А та В. Визначити, чи вони
-    // дорівнюють, використовуючи бітове подання чисел.
+  // {
+  //   // Задано два цілих значення А та В. Визначити, чи вони
+  //   // дорівнюють, використовуючи бітове подання чисел.
 
-    int a, b;
-    std::cout << "Enter two integers: ";
-    std::cin >> a >> b;
+  //   int a, b;
+  //   std::cout << "Enter two integers: ";
+  //   std::cin >> a >> b;
 
-    if (areEqual(a, b)) {
-      std::cout << "The numbers are equal." << std::endl;
-    } else {
-      std::cout << "The numbers are not equal." << std::endl;
-    }
-  }
+  //   if (areEqual(a, b)) {
+  //     std::cout << "The numbers are equal." << std::endl;
+  //   } else {
+  //     std::cout << "The numbers are not equal." << std::endl;
+  //   }
+  // }
 
-  {
-    // Задано ціле значення А. Визначити, чи є значення А
-    // кратним 8.
+  // {
+  //   // Задано ціле значення А. Визначити, чи є значення А
+  //   // кратним 8.
 
-    int a;
-    std::cout << "Enter an integer: ";
-    std::cin >> a;
+  //   int a;
+  //   std::cout << "Enter an integer: ";
+  //   std::cin >> a;
 
-    if (isMultipleOf8(a)) {
-      std::cout << "The number is a multiple of 8." << std::endl;
-    } else {
-      std::cout << "The number is not a multiple of 8." << std::endl;
-    }
-  }
+  //   if (isMultipleOf8(a)) {
+  //     std::cout << "The number is a multiple of 8." << std::endl;
+  //   } else {
+  //     std::cout << "The number is not a multiple of 8." << std::endl;
+  //   }
+  // }
 
   {
     // Завдання:
@@ -90,7 +106,7 @@ int main() {
 
     int n = 10;
 
-    std::vector<int> a(n);
+    std::vector<int> a(n); // [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
     std::vector<int> b(n);
 
     for (int i = 0; i < n; i++) {
