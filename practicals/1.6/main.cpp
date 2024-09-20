@@ -107,7 +107,7 @@ int main() {
     int n = 10;
 
     std::vector<int> a(n); // [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
-    std::vector<int> b(n);
+    std::vector<int> b(n); // [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 
     for (int i = 0; i < n; i++) {
       a[i] = rand() % 2;
