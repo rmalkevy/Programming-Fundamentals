@@ -88,7 +88,7 @@ int main() {
     // Вихідні дані:
     // - Результуюча послідовність R.
 
-    int n = 20;
+    int n = 10;
 
     std::vector<int> a(n);
     std::vector<int> b(n);
