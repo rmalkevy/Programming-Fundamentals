@@ -16,7 +16,7 @@ void setLogLevel(int level) {
 }
 
 int main() {
-    setLogLevel(3);  // Set log level to 2
+    setLogLevel(4);  // Set log level to 2
 
     logMessage("This is a Debug message", 1);  // Won't print, as level 1 is below logLevel
     logMessage("This is an Information message", 2);  // Will print, as level 2 is equal to logLevel
