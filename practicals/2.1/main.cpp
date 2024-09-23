@@ -17,7 +17,6 @@
 // Sequence  9: -79 -71 -92  -1  35 -86  90  -8 -15 -34 
 // Sequence 10: -97  35  27   9 -87  40   3 -65  66  35 
 
-
 int main() {
     srand(static_cast<unsigned>(time(0)));  // Initialize random number generator
 
