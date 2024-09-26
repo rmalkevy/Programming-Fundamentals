@@ -9,12 +9,7 @@ void visitWebsite() {
 }
 
 int main() {
-    // while(true){
-    //     if (temperature > 90){
-    //         sleep(1);
-    //     }
-    //     visitWebsite();
-    // }
+    visitWebsite();  // Output: 1 1
     visitWebsite();  // Output: 2 1
     visitWebsite();  // Output: 3 1
     return 0;

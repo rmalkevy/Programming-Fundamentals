@@ -3,7 +3,7 @@
 #include <iostream>
 #include <string>
 
-bool is_production = true;
+bool is_production = false;
 
 static int logLevel = 1;  // Static global variable, file-scoped
 
