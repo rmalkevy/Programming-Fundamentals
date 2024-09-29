@@ -29,7 +29,7 @@ int main() {
 
     // Виводимо початкові послідовності
     cout << "Початкова послідовність A: ";
-    for (int i = 0; i < A.size(); ++i) {
+    for (int i = 0; i < A.size(); i++) {
         cout << A[i] << " ";
     }
     cout << endl;

@@ -15,7 +15,7 @@
 // Sequence  7:  55 -32 -69 -38  79  89  82 -10  14 -56 
 // Sequence  8: -82 -49  17 -28  71 -79  72  53  -1 -53 
 // Sequence  9: -79 -71 -92  -1  35 -86  90  -8 -15 -34 
-// Sequence 10: -97  35  27   9 -87  40   3 -65  66  35 
+// Sequence 10: -97  35  27   9 -87  40   3 -65  66  45 
 
 int main() {
     srand(static_cast<unsigned>(time(0)));  // Initialize random number generator
@@ -26,10 +26,10 @@ int main() {
     std::vector<std::vector<int>> A(m);  // Set of sequences
 
     // Generation of random numbers for each sequence
-    for (int i = 0; i < m; ++i) {
+    for (int i = 0; i < m; i++) {
         A[i].resize(n);
-        for (int j = 0; j < n; ++j) {
-            A[i][j] = rand() % 199 - 99;  // Random numbers from -99 to 99
+        for (int j = 0; j < n; j++) {
+            A[i][j] = (rand() % 199) - 99;  // Random numbers from -99 to 99
         }
     }
 
@@ -45,7 +45,7 @@ int main() {
 
     // Output results
     std::cout << "Generated sequences:\n";
-    for (int i = 0; i < m; ++i) {
+    for (int i = 0; i < m; i++) {
         std::cout << "Sequence " << std::setw(2) << i + 1 << ": ";
         for (int value : A[i]) {
             std::cout << std::setw(3) << value << " ";
