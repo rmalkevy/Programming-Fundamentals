@@ -4,6 +4,12 @@
 
 using namespace std;
 
+void swap(int &a, int &b) {
+    int temp = a;
+    a = b;
+    b = temp;
+}
+
 // Function for bubble sort with the ability to choose the sorting direction
 void bubbleSort(int arr[], int n, bool ascending = true) {
     for (int i = 0; i < n - 1; i++) {
@@ -12,18 +18,14 @@ void bubbleSort(int arr[], int n, bool ascending = true) {
             if (ascending) {
                 if (arr[j] > arr[j + 1]) {
                     // Change places if elements are not in the correct order
-                    int temp = arr[j];
-                    arr[j] = arr[j + 1];
-                    arr[j + 1] = temp;
+                    swap(arr[j], arr[j + 1]);
                 }
             }
             // If descending mode, sort in descending order
             else {
                 if (arr[j] < arr[j + 1]) {
                     // Change places if elements are not in the correct order
-                    int temp = arr[j];
-                    arr[j] = arr[j + 1];
-                    arr[j + 1] = temp;
+                    swap(arr[j], arr[j + 1]);
                 }
             }
         }
@@ -68,7 +70,7 @@ int main() {
     bubbleSort(arr, n, true); // true - ascending
     printArray(arr, n);
 
-    cout << "Create new array with even numbers: ";
+    cout << "Create new array with even numbers array : ";
     int evenNumbers[n];
     // std::vector<int> evenNumbers(n);
     int evenCount = 0;
@@ -81,6 +83,7 @@ int main() {
     // printVector(evenNumbers);
 
     // Or using vector
+    cout << "Create new array with even numbers vector: ";
     vector<int> evenNumbersVector;
     for (int i = 0; i < n; i++) {
         if (arr[i] % 2 == 0) {
