@@ -93,5 +93,3 @@ int main() {
     printVector(evenNumbersVector);
     return 0;
 }
-
-
