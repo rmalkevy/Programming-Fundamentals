@@ -18,7 +18,9 @@ void bubbleSort(int arr[], int n, bool ascending = true) {
             if (ascending) {
                 if (arr[j] > arr[j + 1]) {
                     // Change places if elements are not in the correct order
-                    swap(arr[j], arr[j + 1]);
+                    int& a = arr[j];
+                    int& b = arr[j + 1];
+                    swap(a, b);
                 }
             }
             // If descending mode, sort in descending order
@@ -59,15 +61,17 @@ int main() {
     int n = 10;
     int arr[10];
     for (int i = 0; i < n; i++) {
+        cout << arr[i] << " ";
         arr[i] = rand() % 100;
     }
+    cout << endl;
 
     cout << "Initial array: ";
     printArray(arr, n);
 
     // Sorting in ascending order
     cout << "Sorting in ascending order: ";
-    bubbleSort(arr, n, true); // true - ascending
+    bubbleSort(arr, n); // true - ascending
     printArray(arr, n);
 
     cout << "Create new array with even numbers array : ";

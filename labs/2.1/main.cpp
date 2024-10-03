@@ -42,17 +42,21 @@ int main() {
     srand(static_cast<unsigned>(time(0)));
 
     int n = 10;
-    int arr[10];
+    int arr[10]; //0, 1, 2, 3
+    int arr2[4] = {3, 5, 8, 9};
+
     for (int i = 0; i < n; i++) {
+        cout << " " << arr[i];
         arr[i] = rand() % 100;
     }
+    cout << ' ' << endl;
 
     cout << "Initial array: ";
     printArray(arr, n);
 
     // Sorting in ascending order
     cout << "Sorting in ascending order: ";
-    bubbleSort(arr, n, true); // true - ascending
+    bubbleSort(arr, n); // true - ascending
     printArray(arr, n);
 
     // Sorting in descending order
