@@ -31,7 +31,13 @@ int main() {
     cout << "Початкова послідовність A: ";
     for (int i = 0; i < A.size(); i++) {
         cout << A[i] << " ";
+        if (i % 2 == 0) {
+            cout << "A[i] is even" << A[i] << endl;
+        }
     }
+    A.push_back(10);
+    A.pop_back();
+
     cout << endl;
     cout << "Початкова послідовність B: ";
     for (int i = 0; i < B.size(); ++i) {
