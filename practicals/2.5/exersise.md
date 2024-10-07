@@ -62,6 +62,7 @@ The system should perform the following operations:
 
 **Input:**
 
+```yaml
 Enter the number of cars: 3
 
 Enter details for car 1:
@@ -81,9 +82,11 @@ Brand: Honda
 Model: Civic
 Year: 2019
 Rental Price per Day: 50
+```
 
 **Output (after user rents a car):**
 
+```yaml
 Available Cars:
 Brand: Toyota, Model: Corolla, Year: 2018, Rental Price: $40/day
 Brand: BMW, Model: X5, Year: 2020, Rental Price: $120/day
@@ -98,6 +101,7 @@ Brand: BMW, Model: X5, Year: 2020, Rental Price: $120/day
 
 The most expensive available car is:
 Brand: BMW, Model: X5, Year: 2020, Rental Price: $120/day
+```
 
 **Challenge**
 Use loops and conditions to allow multiple rental and return transactions without terminating the program.
