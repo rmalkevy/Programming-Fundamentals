@@ -104,4 +104,4 @@ Brand: BMW, Model: X5, Year: 2020, Rental Price: $120/day
 ```
 
 **Challenge**
-Use loops and conditions to allow multiple rental and return transactions without terminating the program.
+- Use loops and conditions to allow multiple rental and return transactions without terminating the program.
