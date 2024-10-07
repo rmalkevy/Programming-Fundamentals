@@ -13,6 +13,7 @@ The system should perform the following operations:
 1. **Input Data:**
    - Read data for `n` cars (where `n` is provided by the user).
    - For each car, input the `brand`, `model`, `year`, and `rental_price_per_day`. All cars are initially marked as `available`.
+   - You can predefine list of 5 cars or allow to user to input them from `std::cin`.
 
 2. **Display Available Cars:**
    - Write a function to display the details of all cars that are currently available for rent.
