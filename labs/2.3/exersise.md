@@ -1,10 +1,10 @@
 # Task: Implement a Calculator using Stack in C++
 
 ## Objective:
-You are tasked with creating a simple calculator that evaluates mathematical expressions in **infix notation** using a stack. The calculator should support basic arithmetic operations: addition, subtraction, multiplication, and division. The program should correctly handle operator precedence and parentheses.
+You are tasked with creating a simple calculator that evaluates mathematical expressions in **infix notation** using a stack. The calculator should support basic arithmetic operations: addition, subtraction, multiplication, and division. The program should correctly handle operator precedence.
 
 ## Problem Description:
-In infix notation, the operator is placed between the operands. For example, the expression `3 + 4` is in infix form. To evaluate this expression correctly, parentheses and operator precedence need to be considered.
+In infix notation, the operator is placed between the operands. For example, the expression `3 + 4` is in infix form. To evaluate this expression correctly, operator precedence need to be considered.
 
 You will implement a C++ program that:
 1. Reads an infix mathematical expression from the user.
