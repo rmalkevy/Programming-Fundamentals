@@ -1,7 +1,9 @@
 ## Task: Linked List and inline Functions
 
 ## Description:
-You need to implement a singly linked list that allows adding elements to the front, removing elements from the front, and printing all the elements of the list. For this, you will use inline functions to improve performance.
+You need to implement a singly linked list that allows adding elements to the front and end, removing elements from the front and end, searching for an element by value, reversing the list, clearing the list, and sorting the list in ascending order using the bubble sort algorithm. For this, you will use inline functions to improve performance.
+
+Some of the functions are already implemented for you, but you need to implement the rest of the functions.
 
 ## Steps:
 1. Node Structure
