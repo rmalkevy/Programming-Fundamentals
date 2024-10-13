@@ -84,9 +84,9 @@ int main() {
 
 ## Tasks:
 1. addToEnd: Implement an inline function for adding an element to the end of the list
-2. searchElement: Implement an inline function for searching for an element by value in the list and returning the pointer to the found element. If the element is not found, the function should return nullptr.
 3. removeFromEnd: Implement an inline function for removing the last element from the list
-4. reverseList: Implement an inline function for reversing the list
-5. clearList: Implement an inline function for clearing the list and releasing the memory for all nodes using the delete operator.
+4. searchElement: Implement an inline function for searching for an element by value in the list and returning the pointer to the found element. If the element is not found, the function should return nullptr.
+5. reverseList: Implement an inline function for reversing the list
 6. sortList: Implement an inline function for sorting the list in ascending order using the bubble sort algorithm.
 7. toTwoWayList: Implement an inline function for converting the singly linked list to a two-way circular linked list.
+8. clearList: Implement an inline function for clearing the list and releasing the memory for all nodes using the delete operator.
