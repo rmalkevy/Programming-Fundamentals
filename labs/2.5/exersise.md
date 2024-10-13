@@ -89,3 +89,4 @@ int main() {
 4. reverseList: Implement an inline function for reversing the list
 5. clearList: Implement an inline function for clearing the list and releasing the memory for all nodes using the delete operator.
 6. sortList: Implement an inline function for sorting the list in ascending order using the bubble sort algorithm.
+7. toTwoWayList: Implement an inline function for converting the singly linked list to a two-way circular linked list.
