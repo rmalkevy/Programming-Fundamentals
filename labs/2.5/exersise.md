@@ -81,7 +81,6 @@ int main() {
 }
 ```
 
-
 ## Tasks:
 1. addToEnd: Implement an inline function for adding an element to the end of the list
 3. removeFromEnd: Implement an inline function for removing the last element from the list
