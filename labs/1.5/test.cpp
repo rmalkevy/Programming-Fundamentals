@@ -32,4 +32,25 @@ int main()
 	//ФОРМУЛА - ((a3 <БО1> <УО> b3) <АО1> <СО> c3) <ОВ> (d3 <АО2> (e3 <БО2> <БазО> double))
 	bool res3 = ((a3 ^ ~b3) ** &c3) == (d3 * (e3 >> sizeof(double)));
 	cout << "res3 :" << res3 << endl;
+
+	// 01010101
+	int8_t board = 0b01010101;
+	int8_t mask1 = 0b10000000;
+	            // 0b01011101
+
+	int8_t res1 = board | mask1; 
+
+	int a = 1;
+	int b = 0;
+	if (a && b) {
+		cout << "a || b is true" << endl;
+	} else {
+		cout << "a || b is false" << endl;
+	}
+
+	if (a && b) {
+		cout << "a && b is true" << endl;
+	} else {
+		cout << "a && b is false" << endl;
+	}
 }
