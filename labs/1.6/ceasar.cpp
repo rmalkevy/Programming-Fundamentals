@@ -32,6 +32,7 @@ int main() {
     std::cout << "Shifted 'a' with cast   : " << char('a' + shift_test) << std::endl;
 
     // Get the text and shift from the user
+    // Note: std::getline is used to read the text with spaces
     std::string text;
     int shift;
     int a = 65;
