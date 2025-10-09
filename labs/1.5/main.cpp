@@ -37,5 +37,17 @@ int main() {
         cout << "res: " << boolalpha << res << endl;
     }
 
+    const unsigned char mask = 0b10111010;
+    const bool flag1 = true;
+    const bool flag2 = false;
+    const bool flag3 = true;
+    const bool flag4 = true;
+    const bool flag5 = true;
+    const bool flag6 = false;
+    const bool flag7 = true;
+    const bool flag8 = false;
+
+
+    // 0010101010100111 & 0000000000000001
     return 0;
 }
